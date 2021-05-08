@@ -1,0 +1,224 @@
+/*** Fonts ***/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/************ Footer Section styling **************/
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 1.6rem sans-serif;
+    padding: 5rem 5rem 6rem 5rem;
+    margin-top: 8rem;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left (Column 1) */
+
+.footer-distributed .footer-left {
+    width: 32%;
+}
+
+.footer-distributed h3 {
+    color: white;
+    font: normal 2.4rem 'Cookie', cursive;
+    margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+    width: 25%;
+}
+
+.footer-distributed h3 span {
+    color: orange;
+    font: normal 2.4rem 'Cookie', cursive;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: white;
+    margin: 2rem 0 1.2rem;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color: #8f9296;
+    font: normal 1.4rem 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Footer Center (Column 2) */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4.2rem;
+    margin: 1rem 1.5rem;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 1.7rem;
+    line-height: 3.8rem;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 1.4rem;
+    font: bold 1.4rem sans-serif;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font: normal 1.3rem 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: orange;
+    text-decoration: none;
+}
+
+
+/* Footer Right (Column 3) */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 2rem;
+    color: #92999f;
+    font: normal 1.3rem 'Montserrat', sans-serif;
+    word-spacing: .2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font: bold 1.8rem sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 2.5rem;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: .2rem;
+
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3.5rem;
+
+    margin-right: .3rem;
+    margin-bottom: .5rem;
+}
+
+/**************** Responsive according to device ********************/
+@media only screen and (max-width: 1024px) {
+
+    /* General Tablet view */
+    html {
+        font-size: 55%;
+    }
+
+    .footer-distributed .footer-left img {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    /* Low res Tablet view */
+    html {
+        font-size: 45%;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+
+    /* Smaller tablet/Large Mobile view */
+    html {
+        font-size: 35%;
+    }
+
+    .footer-distributed .footer-left img {
+        width: 20%;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 374px) {}

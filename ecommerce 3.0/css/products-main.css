@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+/*--- Featured Categories CSS ---*/
+.featured-categories {
+    margin: 2rem 0;
+}
+.featured-categories img {
+    width: 100%;
+    padding: 2rem 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories img:hover {
+    transform: scale(1.05);
+}
+
+/**** Exclusive Product *****/
+.exclusive {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 4rem;
+    height: 50rem;
+/*    padding: 10px 0;*/
+}
+.row .col-2 {
+    width: 50%;
+}
+.col-2 .offer-img {
+    width: auto;
+    padding: 3rem;
+    align-self: center;
+    height: 75%;
+    transition: 1s;
+    margin-left: 25%;
+    cursor: pointer;
+}
+.col-2 .offer-img:hover {
+    transform: scale(1.05);
+}
+.col-2 p {
+    margin-top: 10rem;
+    font-size: 1.6rem;
+}
+.col-2 h1 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.col-2 small {
+    font-size: 1.4rem;
+    color: dimgrey;
+}
+.col-2 h3 {
+    margin-top: 2rem;
+}
+.col-2 button {
+    margin-top: 3rem;
+    width: 12rem;
+    height: 4rem;
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    text-align: center;
+    border-radius: 2.5rem;
+    font-size: 1.4rem;
+    border: none;
+}
+.col-2 button h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*--- On Sale product CSS ---*/
+.title-box
+{
+    background: orange;
+    color: #fff;
+    width: 19rem;
+    padding: .4rem 1rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.title-box h2
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: black;
+}
+.title-box::after
+{
+    content: '';
+    border-top: 4rem solid orange;
+    border-right: 5rem solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -.4rem;
+    margin-left: 18rem;
+}
+
+/*-------------product-top CSS----------------*/
+.product-top img
+{
+    width: 100%;
+    cursor: pointer;
+}
+/*
+.overlay-right
+{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 7rem;
+}
+.overlay-right .fa
+{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 2rem;
+    padding: .7rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary
+{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+*/
+.product-top:hover .overlay-right
+{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+/*--------------Product-bottom-CSS---------------*/
+.product-bottom {
+    margin-top: 1rem;
+}
+.product-bottom .fa
+{
+    color: orange;
+    font-size: 1.4rem;
+}
+.product-bottom h3
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-bottom h5
+{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.new-products
+{
+    margin: 5rem 0;
+}

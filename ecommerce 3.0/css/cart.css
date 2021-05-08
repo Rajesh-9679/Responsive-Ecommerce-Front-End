@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/************ Body CSS **************/
+
+.container{
+    width: 100%;
+	margin: 0 auto;
+}
+
+/******** Page heading *******/
+.title-box
+{
+    background: orange;
+    color: #fff;
+    width: 20rem;
+    padding: .4rem 1rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+    display: flex;
+}
+.title-box h2
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: black;
+}
+.title-box::after
+{
+    content: '';
+    border-top: 4rem solid orange;
+    border-right: 5rem solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -.4rem;
+    margin-left: 19rem;
+}
+
+/******** Cart Product items ********/
+.cart{
+	display: flex;
+}
+
+.products{
+	flex: 0.75;
+}
+
+.product{
+	display: flex;
+	width: 100%;
+	height: 20rem;
+	overflow: hidden;
+	border: .1rem solid silver;
+	margin-bottom: 2rem;
+}
+
+.product:hover{
+	border: none;
+	box-shadow: .2rem .2rem .4rem rgba(0,0,0,0.2);
+	transform: scale(1.01);
+}
+
+.product > img{
+	width: 30rem;
+	height: 20rem;
+	object-fit: cover;
+}
+
+.product > img:hover{
+	transform: scale(1.04);
+}
+
+.product-info{
+	padding: 2rem;
+	width: 100%;
+	position: relative;
+}
+
+.product-name {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.product-price{
+	margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: 'Karla', sans-serif;
+}
+
+del {
+    color: grey;
+    font-size: 2rem;
+}
+
+.product-offer {
+    margin-bottom: 2rem;
+    color: green;
+}
+
+.product-quantity {
+    font-size: 1.4rem;
+}
+
+.product-quantity > input{
+	width: 4rem;
+	padding: .5rem;
+	text-align: center;
+}
+
+.product-remove{
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	padding: 1rem 2.5rem;
+	background-color: orangered;
+	color: white;
+	cursor: pointer;
+	border-radius: .5rem;
+}
+
+.product-remove:hover{
+	background-color: white;
+	color: red;
+	font-weight: 600;
+	border: .1rem solid orangered;
+}
+
+.product-remove i{
+	margin-right: .5rem;
+    font-size: 1.6rem;
+}
+.product-remove span {
+    font-size: 1.4rem;
+}
+/****** Cart Summary ******/
+.cart-total{
+	flex: 0.25;
+	margin-left: 2rem;
+	padding: 2rem;
+	height: 24rem;
+	border: .1rem solid silver;
+	border-radius: .5rem;
+}
+
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.cart-summary-title {
+    font-size: 1.4rem;
+}
+
+.cart-summary-price {
+    font-size: 1.8rem;
+    font-family: 'Karla', sans-serif;
+    font-weight:
+}
+
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 4rem;
+	line-height: 4rem;
+	background-color: orange;
+    font-size: 1.6rem;
+	color: white;
+	text-decoration: none;
+    border-radius: .5rem;
+}
+
+.cart-total a:hover{
+	background-color: orangered;
+    color: white;
+}
+
+/**************** Responsive according to device ********************/
+@media only screen and (max-width: 532px) {
+
+    /* Smaller tablet/Large Mobile view */
+    html {
+        font-size: 35%;
+    }
+
+    /*******************/
+    .banner {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    /* Low res Tablet view */
+    html {
+        font-size: 45%;
+    }
+	.remove{
+		display: none;
+	}
+
+	.product{
+		height: 15rem;
+	}
+
+	.product > img{
+		height: 15rem;
+		width: 20rem;
+	}
+
+	.product-name, .product-price, .product-offer{
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.cart{
+		flex-direction: column;
+	}
+
+	.cart-total{
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+    /* General Tablet view */
+    html {
+        font-size: 55%;
+    }
+	.container{
+		max-width: 95%;
+	}
+}

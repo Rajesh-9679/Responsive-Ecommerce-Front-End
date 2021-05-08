@@ -1,0 +1,321 @@
+/*** Fonts ***/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Kaushan+Script&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(0deg, orange, #FFFFB3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/************************* Page Content Styling****************************/
+/******* Toolbar with Logo and options buttons ********/
+.logobar {
+    margin-top: 1.6rem;
+    margin-left: 5.6rem;
+    display: inline-flex;
+    width: 100%;
+}
+
+.options {
+    width: 75%;
+    height: 4rem;
+    float: right;
+}
+
+.options ul {
+    display: block;
+    float: right;
+    align-content: flex-end;
+}
+
+.options ul li {
+    list-style-type: none;
+    margin: .8rem;
+    padding: .8rem 3.2rem;
+    text-align: center;
+    float: right;
+    background-color: darkorange;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.options ul li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font: bold 1.6rem 'Karla', sans-serif;
+}
+
+.brand-logo {
+    height: 5.5rem;
+    vertical-align: baseline;
+    margin: .5rem 4.8rem .5rem 10.8rem;
+}
+
+/********* Page Body **********/
+.auth-page {
+    display: block;
+    width: 100%;
+    padding: 5rem;
+    margin: auto;
+}
+
+#form-area {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+/**** Page Featured Image ****/
+img {
+    margin-left: 30%;
+}
+
+/*** Forms Section ***/
+/* Quote Container */
+.quote-container {
+    text-align: center;
+}
+
+.quote-container h3 {
+    color: #3a3a3a;
+    font: normal 2rem 'Kaushan Script', cursive;
+}
+
+.quote-container h4 {
+    color: orangered;
+    margin-left: 15%;
+    font: normal 1.6rem 'Montserrat', sans-serif;
+}
+
+/* Forms container */
+.form-container {
+    background: white;
+    width: 40rem;
+    height: 50rem;
+    position: relative;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 5% 25%;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 2rem 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.form-container span {
+    font: bold 1.9rem 'Karla', sans-serif;
+    padding: 0 1.5rem;
+    color: #555;
+    cursor: pointer;
+    width: 10rem;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 40rem;
+    padding: 0 2rem;
+    position: absolute;
+    top: 10rem;
+    transition: transform 1s;
+}
+
+form h4 {
+    margin-bottom: 2rem;
+    font: normal 1.6rem 'Montserrat', sans-serif;
+}
+
+form input {
+    width: 100%;
+    height: 3.6rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font: normal 1.4rem 'Montserrat', sans-serif;
+    border: .15rem solid #555;
+    border-radius: 2rem;
+}
+
+form .submit-btn {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    margin: 2.4rem 0;
+    padding: .8rem 3.2rem;
+    text-align: center;
+    font: bold 1.6rem 'Karla', sans-serif;
+    color: white;
+    background-color: darkorange;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    cursor: pointer;
+}
+
+form a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: darkorange;
+    text-decoration: none;
+}
+
+form a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+form .submit-btn:active {
+    background-color: darkorange;
+}
+
+#login-form {
+    left: -40rem;
+}
+
+#register-form {
+    left: 0;
+}
+
+#indicator {
+    width: 10rem;
+    border: none;
+    color: orange;
+    background-color: orange;
+    height: .3rem;
+    margin-top: .8rem;
+    transform: translateX(10rem);
+    transition: transform 1s;
+}
+
+/********** Page Footer **********/
+#auth-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: .8rem;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#auth-footer h6,
+p {
+    font: normal 1.2rem 'Montserrat', sans-serif;
+}
+
+.fa-copyright {
+    color: white;
+    width: 2rem;
+}
+
+/**************** Responsive according to device ********************/
+@media only screen and (max-width: 1024px) {
+
+    /* General Tablet view */
+    html {
+        font-size: 55%;
+    }
+
+    img {
+        margin-left: 20%;
+        height: 95%;
+    }
+
+    .form-container {
+        margin: 5%;
+    }
+
+    .options {
+        width: 65%;
+        float: right;
+    }
+
+    .brand-logo {
+        height: 5rem;
+        margin: .5rem 4.8rem .5rem 8rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    /* Low res Tablet view */
+    html {
+        font-size: 45%;
+    }
+
+    .options {
+        width: 55%;
+        float: right;
+    }
+
+    img {
+        margin-left: auto;
+        height: 90%;
+    }
+
+    .quote-container {
+        display: none;
+    }
+
+    .form-container {
+        width: 35rem;
+        height: 50rem;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 532px) {
+
+    /* Smaller tablet/Large Mobile view (Need work here) */
+    html {
+        font-size: 35%;
+    }
+
+    img {
+        height: 110%;
+        position: relative;
+    }
+
+    #img-area {
+        text-align: center;
+    }
+
+    #form-area {
+        width: 100%;
+        position: absolute;
+        top: 35%;
+    }
+
+    .form-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+.form-container form {
+    max-width: 40rem;
+    padding: 0 4rem;
+    position: absolute;
+    top: 10rem;
+    transition: transform 1s;
+}

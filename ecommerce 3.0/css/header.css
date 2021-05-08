@@ -1,0 +1,425 @@
+/*** Fonts ***/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/******************** Styling Code **********************/
+.top-nav-bar {
+    height: 6rem;
+    top: 0;
+    position: sticky;
+    background: #FFFFB3;
+    z-index: 2;
+    border-bottom: .3rem solid orange;
+}
+
+/*************** Toobar Styling *******************/
+.toolbar {
+    display: inline-flex;
+    width: 100%;
+}
+
+/* (Toolbar child 1) */
+.logo-container {
+    width: 25%;
+}
+
+.brand-logo {
+    height: 4.5rem;
+    vertical-align: baseline;
+    margin: .5rem 4.8rem .5rem 10.8rem;
+}
+
+/* search bar style (Toolbar child 2) */
+.search-bar {
+    float: right;
+    width: 40%;
+    height: 4rem;
+    margin: .8rem 1.6rem .8rem 1.6rem;
+}
+
+.search-bar input[type=text] {
+    width: 90%;
+    height: 4rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border: .2rem solid orange;
+    outline: none;
+    font: normal 1.4rem 'Montserrat', sans-serif;
+    padding-left: 1.6rem;
+    vertical-align: middle;
+
+}
+
+.search-bar button {
+    width: 10%;
+    height: 4rem;
+    background-color: orange;
+    color: #fff;
+    float: right;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    align-content: center;
+    font-size: 1.4rem;
+    border: none;
+}
+
+/* NavBar right side options style (Toolbar child 3) */
+.nav-options {
+    width: 30%;
+    height: 4rem;
+    float: right;
+}
+
+.nav-options ul {
+    display: block;
+    float: right;
+    align-content: space-between;
+}
+
+.nav-options ul li {
+    list-style-type: none;
+    margin: 1rem;
+    padding: .8rem 3.2rem;
+    text-align: center;
+    float: right;
+    background-color: orange;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-options ul li a {
+    font: bold 1.6rem 'Karla', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* cart option icon style */
+.fa-shopping-cart {
+    margin-right: .8rem;
+    margin-left: .8rem;
+}
+
+/*************** Categries MenuBar Styling *******************/
+.nav-category-menu-bar {
+    width: 100%;
+    height: 4rem;
+    margin-top: .3rem;
+    z-index: 3 !important;
+    background: white;
+}
+
+.nav-category-menu-bar ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-shadow: .05rem .1rem 1rem #cfd8dc;
+
+}
+
+.nav-category-menu-bar ul li {
+    color: #3a3a3a;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    background: white;
+    font: bold 1.6rem 'Karla', sans-serif;
+}
+
+.nav-category-menu-bar ul li a {
+    display: block;
+    padding: 0 1.5rem;
+    color: #3a3a3a;
+    text-decoration: none;
+    line-height: 4rem;
+}
+
+.nav-category-menu-bar ul li a:hover {
+    background: #FFFFB3;
+}
+
+.nav-category-menu-bar ul ul {
+    position: absolute;
+    top: 4rem;
+    display: none;
+}
+
+.nav-category-menu-bar ul li:hover > ul {
+    display: block;
+    z-index: 5;
+    box-shadow: .05rem .2rem .8rem #bfbfbf;
+}
+
+.nav-category-menu-bar ul ul li {
+    width: 15rem;
+    float: none;
+    padding: 0;
+    font: 1.4rem 'Karla', sans-serif;
+    text-align: left;
+    display: list-item;
+    position: relative;
+}
+
+.fa-angle-down {
+    color: #90a4ae;
+    margin-left: .5rem;
+}
+
+#menu-btn {
+    font-size: 2.4rem;
+    margin: 0 1rem;
+    padding: 1.5rem 0;
+    color: orange;
+    display: none;
+
+}
+
+#close-btn {
+    font-size: 2rem;
+    margin: 0 1rem;
+    margin-bottom: 4rem;
+    padding: 1.2rem 0;
+    color: orange;
+    display: none;
+}
+
+#cat-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    margin-left: 2.4rem;
+    display: none;
+    color: orange;
+}
+
+/**************** Responsive according to device ********************/
+@media only screen and (max-width: 1024px) {
+
+    /* General Tablet view */
+    html {
+        font-size: 55%;
+    }
+
+    .nav-category-menu-bar {
+        display: inline-block;
+    }
+
+    .brand-logo {
+        margin: .5rem 4.8rem .5rem 6.8rem;
+    }
+
+    .logo-container {
+        width: 20%;
+    }
+
+    .nav-options {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    /* Low res Tablet view */
+    html {
+        font-size: 45%;
+    }
+
+    .brand-logo {
+        height: 4rem;
+        vertical-align: baseline;
+        margin: .5rem 2.4rem .5rem 4.8rem;
+    }
+
+    .logo-container {
+        width: 20%;
+    }
+
+    .nav-options {
+        width: 40%;
+    }
+
+    .search-bar {
+        width: 35%;
+    }
+
+    .nav-category-menu-bar {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+
+    /* Smaller tablet/Large Mobile view */
+    html {
+        font-size: 35%;
+    }
+
+    /* Toolbar layout Orientation change */
+    .top-nav-bar {
+        height: 11.8rem;
+        border-bottom: 0;
+        border-bottom: .3rem solid orange;
+    }
+
+    .brand-logo {
+        height: 5rem;
+        margin: .5rem 2.4rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        margin: 0;
+        padding: 0 2.4rem;
+    }
+
+    .search-bar input[type=text] {
+        width: 90%;
+        padding-right: 1.6rem;
+    }
+
+    .search-bar button {
+        width: 10%;
+    }
+
+    .nav-options {
+        width: 100%;
+        height: 3rem;
+        margin: 0 2.4rem 0 0;
+    }
+
+    .nav-options ul {
+        margin: 1rem 0;
+        width: 40%;
+        display: inline-flex;
+    }
+
+    .nav-options ul li {
+        height: 4rem;
+        width: 100%;
+        margin: 0 0 0 .8rem;
+        padding: .8rem 0;
+        background-color: #FFFFB3;
+    }
+
+    .nav-options ul li a {
+        color: orange;
+    }
+
+    .nav-category-menu-bar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.1s;
+    }
+
+    .nav-category-menu-bar ul {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .nav-category-menu-bar ul li {
+        width: 100%;
+    }
+
+    .nav-category-menu-bar ul li a {
+        width: 100%;
+        text-align: left;
+        padding: .8rem 2.4rem;
+    }
+
+    /* The navigation menu links */
+    .nav-category-menu-bar a {
+        font-size: 1.8rem;
+        float: left;
+        padding-left: 2.4rem;
+    }
+
+    /******************/
+    .nav-category-menu-bar ul li a:hover {
+        background: #FFFFB3;
+    }
+
+    .nav-category-menu-bar ul ul {
+        position: relative;
+        top: 0;
+        float: right;
+        display: none;
+    }
+
+    .nav-category-menu-bar ul li:hover > ul {
+        display: block;
+        box-shadow: none;
+        background: #eeeeee;
+    }
+
+    .nav-category-menu-bar ul ul li {
+        width: 100%;
+        float: none;
+        padding: 0;
+        font-weight: 500;
+        font-size: 1.2rem;
+        display: list-item;
+        position: relative;
+    }
+
+    /******************/
+    #menu-btn {
+        display: block;
+    }
+
+    #close-btn {
+        display: block;
+        float: right;
+        font-size: 3.2rem;
+        padding-right: 2.4rem;
+    }
+
+    .fa-angle-down {
+        margin-left: 0;
+        float: right;
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    #cat-heading {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+
+    /* Smaller Mobile view */
+    .nav-options ul {
+        margin: 1rem 0;
+        width: 70%;
+    }
+}
